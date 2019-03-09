@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Singleton
@@ -17,6 +18,16 @@ namespace Singleton
             RomanEmployee.Stop();
             Console.WriteLine($"Pracownik jest w pracy: {RomanEmployee.IsWorking()}");
             Console.ReadKey();
+
+            //Bonus
+            //Console.WriteLine("Roman nie pracuje");
+            //Console.WriteLine($"Pracownik pracuje już {RomanEmployee.WorkingTime()}");
+            //Console.WriteLine("Roman pracuje");
+            //var roman = RomanEmployee.Start();
+            //Thread.Sleep(3000); // Czeka 3 sekundy.
+            //RomanEmployee.Stop();
+            //Console.WriteLine($"Pracownik pracuje już {RomanEmployee.WorkingTime()}");
+            Console.Read();
         }
     }
     
